@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:adjustViewBounds="true"
+                android:background="@android:color/holo_orange_light"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="        Rules:"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Game Objective: The objective of the game is to put together a complete set (or &quot;hand&quot;), which contains combinations of &quot;pung&quot; (three of a kind), &quot;Kong&quot; (four of a kind), &quot;Quint&quot; (five of a kind), or &quot;pairs&quot; (two of a kind) for a total of 14 pieces. Each player starts with 13 tiles. With each turn, a player picks up a 14th tile, and then discards one tile face up in the center of the table. At this point, other players can choose to pass, take the tile to complete a set (pung, kong, or quint - we'll describe this later) or to declare a win (&quot;mahjong&quot;). The first player who completes the set of 14 tiles wins the hand."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 1. Pung - a set of 3 identical tiles. A player must say &quot;Pung&quot; when he/she gets another player's discarded tile to form the combination. The player then must show the created set and then discard a tile. The next player (counterclockwise) will then have the next turn. "
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Kong - a set of 4 identical tiles. A player must say &quot;Kong&quot; when he/she gets another player's discarded tile to form the combination. The player then must show the created set and then discard a tile. The next player (counterclockwise) will then have the next turn. "
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Quint - a set of 5 identical tiles. A player must say &quot;Quint&quot; when he/she gets another player's discarded tile to form the combination. The player then must show the created set and then discard a tile. The next player (counterclockwise) will have the next turn. "
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Sextet- a set of 6 identical tiles. A player must say &quot;Sextet&quot; when he/she gets another player's discarded tile to form the combination. The player then must show the created set and discard a tile. The next player (counterclockwise) will then have the next turn. "
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Pair -- An Eye, or a Pair, are two identical tiles. It cannot be created with discarded tiles unless to declare a win / mahjong. "
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How about if two players are claiming a discarded tile at the same time? Then the Claim Priority is in effect. 1. Win (Mahjong) has priority over other claims. 2. A player next in turn has priority over other players. "
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
